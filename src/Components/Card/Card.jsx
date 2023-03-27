@@ -3,7 +3,7 @@ import React from 'react';
 const Card = (props) => {
     console.log(props)
     const { id, name, price, img, seller, ratings } = props.data
-    // copy kore parent a bosate hobe
+   
     const addToCart = props.addToCart;
   
     return (
