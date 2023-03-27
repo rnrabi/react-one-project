@@ -1,8 +1,11 @@
 import React from 'react';
 
 const Card = (props) => {
-    console.log(props.data)
+    console.log(props)
     const { id, name, price, img, seller, ratings } = props.data
+    // copy kore parent a bosate hobe
+    const addToCart = props.addToCart;
+  
     return (
         <div>
             <div className="card card-compact w-11/12 bg-base-100 shadow-xl">
@@ -15,7 +18,7 @@ const Card = (props) => {
 
                 </div>
                 <div className="card-actions w-full relative">
-                    <button className="btn btn-primary w-full absolute bottom-[-16px] left-0">Buy Now</button>
+                    <button onClick ={()=>{addToCart()}} className="btn btn-primary w-full absolute bottom-[-16px] left-0">Add to cart</button>
                 </div>
             </div>
         </div>
