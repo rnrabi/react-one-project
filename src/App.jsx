@@ -18,7 +18,7 @@ const cartDb = ()=>{
 }
 const [shoping, setShoping] = useState([]);
 const addToCart =()=>{
-  const newShoping = shoping + 1;
+  const newShoping = [ ...shoping , products];
   setShoping(newShoping);
 }
 
