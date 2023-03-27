@@ -12,11 +12,11 @@ const Card = (props) => {
                     <p>Price : $ {price}</p>
                     <p>menufacturer : {seller}</p>
                     <p>Ratings : {ratings}</p>
-                    <div className="card-actions w-full">
-                        <button className="btn btn-primary w-full">Buy Now</button>
-                    </div>
-                </div>
 
+                </div>
+                <div className="card-actions w-full relative">
+                    <button className="btn btn-primary w-full absolute bottom-[-16px] left-0">Buy Now</button>
+                </div>
             </div>
         </div>
     );

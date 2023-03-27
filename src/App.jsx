@@ -17,13 +17,13 @@ function App() {
     <div className="App">
       <Header></Header>
     <div className='container mx-auto mt-8 rgrid'>
-      <div className='grid grid-cols-3 gap-3'>
+      <div className='grid grid-cols-3 gap-3 gap-y-6'>
       {
         products.map(data => <Card data={data}></Card> )
       }
       </div>
       <div>
-        <h2 className='text-center'>Shoping card</h2>
+        <h2 className='text-center'>Order Summary</h2>
       </div>
     </div>
 
